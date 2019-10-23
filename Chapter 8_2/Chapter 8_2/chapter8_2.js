@@ -1,8 +1,12 @@
-var myArray = ["a","b","c","d"];
-console.log(myArray);
+console.log('--- create an object ---');
+var myObject = {
+    name: "Scott Geiger",
+    class: "MIS 425",
+    start_time: "6 PM",
+    myArray: ['a', 'b', 'c']
+}
 
-console.log('--- array element index 1 ---');
-console.log(myArray[1]);
+console.log(myObject);
 
-console.log('--- invalid index ---');
-console.log(myArray[5]);
+console.log(myObject.name);
+console.log(myObject['class']);
