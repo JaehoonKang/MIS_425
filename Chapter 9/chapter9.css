@@ -1,0 +1,37 @@
+div {
+    margin: 5px 0;
+    padding: 20px;
+    border: 2px solid #555;
+    color: #333;
+}
+
+/* backgrounds */
+.greenBg {
+    background-color: darkgreen;
+    color: #fff;
+}
+
+.ltgreenBg {
+    background-color: lightgreen;
+}
+
+.ltblueBg {
+    background-color: lightblue;
+}
+
+.ltyellowBg {
+    background-color: lightgoldenrodyellow;
+}
+
+.ltredBg { 
+    background-color: lightcoral;
+}
+
+/* borders */
+.darkredBorder {
+    border: 3px dashed darkred;
+}
+
+.purpleBorder {
+    border: 5px dotted purple;
+}
