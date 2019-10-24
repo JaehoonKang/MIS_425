@@ -14,8 +14,30 @@ myForm.addEventListener('submit', function(e) {
     //console.log(last);
     //console.log(day);
     //console.log(color);
-
     
+    var firstText= document.createTextNode("First Name = ");
+    var lastText= document.createTextNode("Last Name = ");
+    var favoriteDay= document.createTextNode("Favorite Day = ");
+    var pickColor= document.createTextNode("Pick Your Color = ");
+
+    var p1 = document.createElement("p");
+    var p2 = document.createElement("p");
+    var p3 = document.createElement("p");
+    var p4 = document.createElement("p");
+
+    p1.appendChild(firstText);
+    p2.appendChild(lastText);
+    p3.appendChild(favoriteDay);
+    p4.appendChild(pickColor);
+
+    var results = document.getElementById('results');
+    
+    results.appendChild(p1);
+    results.appendChild(p2);
+    results.appendChild(p3);
+    results.appendChild(p4);
+
+
 
 })
 
