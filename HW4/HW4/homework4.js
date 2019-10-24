@@ -32,10 +32,12 @@ myForm.addEventListener('submit', function(e) {
 
     var results = document.getElementById('results');
     
-    results.appendChild(p1);
-    results.appendChild(p2);
-    results.appendChild(p3);
-    results.appendChild(p4);
+    //(results.appendChild(p1)) + (results.append(first));
+    results.appendChild(p1).append(first);
+    results.appendChild(p2).append(last);
+    results.appendChild(p3).append(day);
+    results.appendChild(p4).append(color);
+    
 
 
 
