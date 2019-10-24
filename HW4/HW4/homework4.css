@@ -1,0 +1,12 @@
+/* background colors for results; matches the option values for the "Pick Your Color" list */
+.ltBlueBg { background-color: lightblue;}
+.ltGreenBg { background-color: lightgreen;}
+.ltYellowBg { background-color: lightgoldenrodyellow;}
+.ltRedBg { background-color: lightcoral;}
+.ltOrangeBg { background-color: lightsalmon;}
+
+section {
+    margin: 5px;
+    padding: 0 20px 10px 20px;
+    border: 2px solid #333;
+}
