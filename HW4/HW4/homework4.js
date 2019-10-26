@@ -33,10 +33,34 @@ myForm.addEventListener('submit', function(e) {
     var results = document.getElementById('results');
     
     //(results.appendChild(p1)) + (results.append(first));
+    /*
     results.appendChild(p1).append(first);
     results.appendChild(p2).append(last);
     results.appendChild(p3).append(day);
     results.appendChild(p4).append(color);
+    */
+    //console.log(results.appendChild(p4).append(color))
+    //console.log(c);
+    //console.log(color);
+
+    document.getElementById('results').classList.add(document.getElementById('colorList').value);
+    //results.classList.remove(color);
+    //results.classList.add(color);
+
+    console.log(color);
+
+    //console.log(color.textContent = "Friday");
+
+    results.appendChild(p1).append(first);
+    results.appendChild(p2).append(last);
+    results.appendChild(p3).append(day);
+
+    if (color = "ltBlueBg") {
+        
+        results.appendChild(p4).textContent = "Light Blue";
+    }
+
+    
     
 
 
