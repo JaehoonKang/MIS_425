@@ -25,14 +25,15 @@ myForm.addEventListener('submit', function(e) {
     var p3 = document.createElement("p");
     var p4 = document.createElement("p");
 
+    var colorList = document.getElementById('colorList');
+
     p1.appendChild(firstText);
     p2.appendChild(lastText);
     p3.appendChild(favoriteDay);
     p4.appendChild(pickColor);
 
+    //part3 var
     var results = document.getElementById('results');
-    
-    //(results.appendChild(p1)) + (results.append(first));
     /*
     results.appendChild(p1).append(first);
     results.appendChild(p2).append(last);
@@ -43,7 +44,9 @@ myForm.addEventListener('submit', function(e) {
     //console.log(c);
     //console.log(color);
 
-    document.getElementById('results').classList.add(document.getElementById('colorList').value);
+    //part2
+    //document.getElementById('results').classList.add(document.getElementById('colorList').value);
+
     //results.classList.remove(color);
     //results.classList.add(color);
 
@@ -54,6 +57,15 @@ myForm.addEventListener('submit', function(e) {
     results.appendChild(p1).append(first);
     results.appendChild(p2).append(last);
     //results.appendChild(p3).append(day);
+
+    //part2 & part3
+    function changeBackground() {
+        document.getElementById('results').classList.add(document.getElementById('colorList').value);
+    }
+
+    colorList.addEventListener('click', changeBackground);
+
+    //part4
 
     if (day == "Mon") {
         results.appendChild(p3).append("Monday");
@@ -82,11 +94,6 @@ myForm.addEventListener('submit', function(e) {
     }else {
         results.appendChild(p4).append("Light Orange");
     }
-
-    
-    
-
-
 
 })
 
