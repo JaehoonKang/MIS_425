@@ -53,11 +53,34 @@ myForm.addEventListener('submit', function(e) {
 
     results.appendChild(p1).append(first);
     results.appendChild(p2).append(last);
-    results.appendChild(p3).append(day);
+    //results.appendChild(p3).append(day);
 
-    if (color = "ltBlueBg") {
-        
-        results.appendChild(p4).textContent = "Light Blue";
+    if (day == "Mon") {
+        results.appendChild(p3).append("Monday");
+    }else if (day == "Tue") {
+        results.appendChild(p3).append("Tuesday");
+    }else if (day == "Wed") {
+        results.appendChild(p3).append("Wednesday");
+    }else if (day == "Thur") {
+        results.appendChild(p3).append("Thursday");
+    }else if (day == "Fri") {
+        results.appendChild(p3).append("Friday");
+    }else if (day == "Sat") {
+        results.appendChild(p3).append("Saturday");
+    }else {
+        results.appendChild(p3).append("Sunday");
+    }
+
+    if (color == "ltBlueBg") {
+        results.appendChild(p4).append("Light Blue");
+    }else if (color == "ltGreenBg") {
+        results.appendChild(p4).append("Light Green");
+    }else if (color == "ltYellowBg") {
+        results.appendChild(p4).append("Light Yellow");
+    }else if (color == "tRedBg") {
+        results.appendChild(p4).append("Light Red");
+    }else {
+        results.appendChild(p4).append("Light Orange");
     }
 
     
