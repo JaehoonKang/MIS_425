@@ -34,23 +34,26 @@ myForm.addEventListener('submit', function(e) {
 
     //part3 var
     var results = document.getElementById('results');
-    /*
+
+    /* part1
+
     results.appendChild(p1).append(first);
     results.appendChild(p2).append(last);
     results.appendChild(p3).append(day);
     results.appendChild(p4).append(color);
     */
-    //console.log(results.appendChild(p4).append(color))
-    //console.log(c);
-    //console.log(color);
+
+    //testcode console.log(results.appendChild(p4).append(color))
+
+    //testcode console.log(color);
 
     //part2
-    //document.getElementById('results').classList.add(document.getElementById('colorList').value);
+    document.getElementById('results').classList.add(document.getElementById('colorList').value);
 
     //results.classList.remove(color);
     //results.classList.add(color);
 
-    console.log(color);
+    //testcode console.log(color);
 
     //console.log(color.textContent = "Friday");
 
